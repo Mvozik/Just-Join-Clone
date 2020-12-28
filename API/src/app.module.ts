@@ -3,12 +3,11 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { JobOfferSchema } from './models/job_offer.schema';
+import { url } from './secret';
 @Module({
   imports: [
     MongooseModule.forFeature([{ name: 'job_offer', schema: JobOfferSchema }]),
-    MongooseModule.forRoot(
-      'mongodb+srv://piotrek:testtest@cluster0.obezc.mongodb.net/JUSTJOIN?retryWrites=true&w=majority',
-    ),
+    MongooseModule.forRoot(url),
   ],
   controllers: [AppController],
   providers: [AppService],
