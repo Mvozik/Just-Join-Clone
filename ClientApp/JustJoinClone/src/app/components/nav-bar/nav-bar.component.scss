@@ -1,0 +1,82 @@
+.logo {
+  width: 120px;
+  margin: auto;
+}
+.logo-box {
+  display: flex;
+  height: 68px;
+  width: fit-content;
+  margin-left: 20px;
+}
+.navbar {
+  display: flex;
+  height: 68px;
+  border-bottom: 1px solid #c3c3c3ab;
+  background-color: white;
+}
+.picked {
+  color: #ff4081;
+}
+button {
+  color: #99a1ab;
+  text-align: center;
+  letter-spacing: 0.3px;
+  margin: auto 0 auto 0;
+}
+.logo-text {
+  margin: auto auto auto 20px;
+
+  color: #99a1ab;
+  font-size: 0.875rem;
+}
+button:hover {
+  transition: 0.3s;
+  color: #ff4080a8;
+}
+.job-button {
+  height: 40px;
+  outline: 0;
+  display: flex;
+  border-radius: 30px;
+  border-color: #75757534;
+  background-color: white;
+  margin: auto 0 auto 15px;
+  p {
+    color: #757575;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: auto;
+    padding: 6px 16px;
+    letter-spacing: 0.5px;
+  }
+}
+.job-button:hover {
+  background-color: whitesmoke;
+  transition: 0.3s;
+}
+
+.sign-in-button {
+  height: 40px;
+  width: 100px;
+  outline: 0;
+  display: flex;
+  border-radius: 30px;
+  border: none;
+  background-color: #ff4081;
+  margin: auto 15px auto 15px;
+  p {
+    color: white;
+    margin: auto;
+    padding: 6px 16px;
+  }
+}
+.sign-in-button:hover {
+  transition: 0.3s;
+  background-color: #a02850;
+}
+
+.option {
+}
+.menu {
+  margin: auto 15px auto 0;
+}

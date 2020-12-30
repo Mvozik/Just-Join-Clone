@@ -1,0 +1,22 @@
+<div class="navbar">
+  <div routerLink="" class="logo-box pointer">
+    <img class="logo" src="./../../../assets/images/logo-jjit.png" />
+  </div>
+  <p class="logo-text">#1 Job Board for IT industry in Poland</p>
+  <button class="picked" mat-button>Offers</button>
+  <button mat-button>Brands</button>
+  <button mat-button>Geek</button>
+  <button mat-button>Matchmaking</button>
+  <button class="job-button pointer"><p>Post a job</p></button>
+  <button class="sign-in-button pointer" [matMenuTriggerFor]="signInMenu">
+    <p>Sign in</p>
+  </button>
+  <button class="menu" mat-icon-button (click)="toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+</div>
+
+<mat-menu #signInMenu="matMenu">
+  <button mat-menu-item>Sign in as developer</button>
+  <button mat-menu-item>Sign in to Employer Panel</button>
+</mat-menu>
