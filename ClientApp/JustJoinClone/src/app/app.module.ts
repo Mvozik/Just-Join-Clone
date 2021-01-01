@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './components/app/app.component';
@@ -16,6 +17,7 @@ import { OfferDetailsComponent } from './components/offer-details/offer-details.
 import { OffersPageComponent } from './components/offers-page/offers-page.component';
 import { OffersFilterComponent } from './components/offers-filter/offers-filter.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { MatCardModule } from '@angular/material/card';
     MatIconModule,
     MatSidenavModule,
     MatCardModule,
+    MatProgressSpinnerModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

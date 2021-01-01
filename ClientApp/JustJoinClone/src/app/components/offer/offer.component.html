@@ -1,3 +1,34 @@
 <mat-card class="container pointer">
-  <div class="indicator"></div>
+  <div *ngIf="category == 'php'" class="php"></div>
+  <div *ngIf="category == 'ruby'" class="ruby"></div>
+  <div *ngIf="category == 'javascript'" class="javascript"></div>
+  <div *ngIf="category == 'net'" class="net"></div>
+  <div *ngIf="category == 'java'" class="java"></div>
+  <div *ngIf="category == 'python'" class="python"></div>
+  <div *ngIf="category == 'mobile'" class="mobile"></div>
+  <div *ngIf="category == 'game'" class="game"></div>
+  <div *ngIf="category == 'analytics'" class="analytics"></div>
+  <div *ngIf="category == 'security'" class="security"></div>
+  <div *ngIf="category == 'data'" class="data"></div>
+  <div *ngIf="category == 'go'" class="go"></div>
+  <div *ngIf="category == 'sap'" class="sap"></div>
+  <div *ngIf="category == 'support'" class="support"></div>
+  <div *ngIf="category == 'other'" class="other"></div>
+  <div *ngIf="category == 'pm'" class="pm"></div>
+  <div *ngIf="category == 'ux'" class="uxui"></div>
+  <div *ngIf="category == 'devops'" class="devops"></div>
+  <div *ngIf="category == 'testing'" class="testing"></div>
+  <div *ngIf="category == 'html'" class="html"></div>
+  <div *ngIf="category == 'c'" class="c"></div>
+  <div *ngIf="category == 'scala'" class="scala"></div>
+
+  <div class="info">
+    <p class="name">{{ name }}</p>
+    <p class="salary" *ngIf="employment.salary">
+      {{ employment.salary.from }} - {{ employment.salary.to }}
+      {{ employment.salary.currency }}
+    </p>
+    <p class="salary" *ngIf="!employment.salary">Undisclosed Salary</p>
+  </div>
+  <div class="state">New</div>
 </mat-card>
