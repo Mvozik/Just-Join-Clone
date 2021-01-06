@@ -1,11 +1,15 @@
 .offer-list {
   width: 95%;
   margin: auto;
+  height: calc(100vh - 149px);
+  overflow: scroll;
+  overflow-x: hidden;
 }
 .offer {
   margin-bottom: 5px;
   outline: 0;
 }
 .spinner {
-  margin: 0 auto 0 auto;
+  position: absolute;
+  left: calc(25% - 45px);
 }

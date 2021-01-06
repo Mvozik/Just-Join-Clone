@@ -1,0 +1,33 @@
+<div class="container">
+  <p class="header">Apply for this job</p>
+
+  <mat-form-field appearance="outline">
+    <mat-label>First & last name</mat-label>
+    <input matInput />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Email </mat-label>
+    <input matInput />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Introduce yourself (linkedin/github links) </mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <ngx-mat-file-input
+      class="file"
+      [multiple]="false"
+      [accept]="'.pdf'"
+      [color]="'red'"
+    >
+    </ngx-mat-file-input>
+  </mat-form-field>
+
+  <mat-checkbox class="example-margin"
+    >Processing data in future recruitment</mat-checkbox
+  >
+  <button class="apply" mat-button>Apply</button>
+</div>

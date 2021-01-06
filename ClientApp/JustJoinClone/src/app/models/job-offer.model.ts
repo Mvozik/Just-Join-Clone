@@ -33,5 +33,5 @@ export interface JobOfferModel {
   company_logo_url: string;
   skills: SkillModel[];
   remote: string;
-  employment_types: EmploymentTypeModel;
+  employment_types: EmploymentTypeModel[];
 }

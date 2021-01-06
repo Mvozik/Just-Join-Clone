@@ -1,0 +1,137 @@
+.container {
+  overflow: scroll;
+  height: calc(100vh - 149px);
+  overflow-x: hidden;
+}
+.offer {
+  width: 90%;
+  margin: 5px auto 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: rgb(55, 71, 79);
+  font-family: "Open Sans", sans-serif;
+}
+.color {
+  width: 95%;
+  margin: auto;
+  height: 250px;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+}
+.image {
+  display: flex;
+  height: 250px;
+  background: url("../../../assets/images/header-background.png") center center /
+    cover no-repeat;
+}
+.apply {
+  background-color: rgb(255, 255, 255);
+  height: 400px;
+  width: 95%;
+  margin: 30px auto 15px auto;
+  border-radius: 5px;
+}
+
+.flex-container {
+  margin: 0 5% 0 5%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.info {
+  position: relative;
+  top: -50%;
+  margin: 0 5px 0 5px;
+}
+.offer-info {
+  display: flex;
+  height: 60%;
+  width: 90%;
+  margin: 15px auto;
+}
+
+.img {
+  max-width: 70px;
+  max-height: 45px;
+}
+.circle-white {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: rgb(255, 255, 255);
+  border-radius: 100px;
+  margin-right: 0px;
+}
+.shadow-circle {
+  flex-shrink: 0;
+  width: 137px;
+  height: 137px;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-clip: padding-box;
+  position: relative;
+  border-radius: 50%;
+  border: 10px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.shadow-circle2 {
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  width: 117px;
+  height: 117px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.title-container {
+  margin: auto 0 auto 15px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  outline-color: rgb(255, 255, 255);
+  color: white;
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .offer-title {
+    font-family: "Open Sans", sans-serif;
+    outline-color: rgb(255, 255, 255);
+    color: white;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .offer-address {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 0 0 10px;
+  }
+  .salary {
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+.flex {
+  display: flex;
+  text-align: center;
+}
+.forward {
+  background-color: #00000031;
+  position: absolute;
+  margin: 5px 0 0 35px;
+}

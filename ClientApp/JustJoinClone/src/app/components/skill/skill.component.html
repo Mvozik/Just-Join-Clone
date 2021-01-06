@@ -1,0 +1,16 @@
+<div class="skill">
+  <div class="circle-container">
+    <div
+      class="circle circle-gray"
+      *ngFor="let number of [1, 2, 3, 4, 5]"
+      [ngClass]="color(number)"
+    ></div>
+  </div>
+  <p>{{ skill.name }}</p>
+  <p class="text">{{ text }}</p>
+</div>
+<div class="skill"></div>
+<div class="skill"></div>
+<div class="skill"></div>
+<div class="skill"></div>
+<div class="skill"></div>

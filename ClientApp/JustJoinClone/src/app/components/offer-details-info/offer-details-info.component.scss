@@ -1,0 +1,52 @@
+.container {
+  height: 75px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 5px 6px -6px #777;
+}
+h4 {
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  margin: 0;
+  padding: 0;
+}
+.texts {
+  position: relative;
+  top: -15px;
+  text-align: center;
+}
+.icon-box {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  left: calc(50% - 18px);
+  top: -18px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #ffb301;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 2px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 5px 0px;
+}
+.icon {
+  margin: auto;
+}
+.green {
+  color: #56c000;
+}
+.blue {
+  color: #008cff;
+}
+.red {
+  color: #ff0202;
+}
+.link {
+  color: rgb(25, 123, 251);
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}

@@ -18,6 +18,14 @@ import { OffersPageComponent } from './components/offers-page/offers-page.compon
 import { OffersFilterComponent } from './components/offers-filter/offers-filter.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { OfferDetailsInfoComponent } from './components/offer-details-info/offer-details-info.component';
+import { OfferDetailsApplyComponent } from './components/offer-details-apply/offer-details-apply.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { NgxMatFileInputModule } from '@angular-material-components/file-input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { OfferDetailsSkillsComponent } from './components/offer-details-skills/offer-details-skills.component';
+import { SkillComponent } from './components/skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +37,10 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     OfferDetailsComponent,
     OffersPageComponent,
     OffersFilterComponent,
+    OfferDetailsInfoComponent,
+    OfferDetailsApplyComponent,
+    OfferDetailsSkillsComponent,
+    SkillComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +53,10 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatCardModule,
     MatProgressSpinnerModule,
     HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,
+    NgxMatFileInputModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

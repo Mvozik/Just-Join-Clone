@@ -1,1 +1,71 @@
-<p>offer-details works!</p>
+<div *ngIf="offer" class="container">
+  <button routerLink="" class="forward" mat-icon-button>
+    <mat-icon>keyboard_backspace</mat-icon>
+  </button>
+  <div class="color" [ngClass]="color()">
+    <div class="image">
+      <div class="offer-info">
+        <div class="shadow-circle">
+          <div class="shadow-circle2">
+            <div class="circle-white">
+              <img class="img" src="{{ offer.company_logo_url }}" />
+            </div>
+          </div>
+        </div>
+        <div class="title-container">
+          <p class="offer-title">{{ offer.title }}</p>
+          <div class="flex">
+            <mat-icon style="color: white">location_on </mat-icon>
+            <p class="offer-address">{{ offer.address_text }}</p>
+          </div>
+          <div class="flex" *ngFor="let employment of offer.employment_types">
+            <p class="salary" *ngIf="employment.salary">
+              {{ employment.salary.from }} &nbsp;-&nbsp;
+              {{ employment.salary.to }}
+              {{ employment.salary.currency.toUpperCase() }} -
+              {{ employment.type.toUpperCase() }}
+            </p>
+            <p class="salary" *ngIf="!employment.salary">
+              Undisclosed Salary - {{ employment.type }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <app-offer-details-info
+      class="info"
+      [iconstring]="'business'"
+      [name]="offer.company_name"
+      [text]="'Company name'"
+      [companyUrl]="offer.company_url"
+    ></app-offer-details-info>
+    <app-offer-details-info
+      class="info"
+      [iconstring]="'supervisor_account'"
+      [name]="offer.company_size"
+      [text]="'Company size'"
+    ></app-offer-details-info>
+    <app-offer-details-info
+      class="info"
+      [iconstring]="'trending_up'"
+      [name]="offer.experience_level"
+      [text]="'EXP. lvl'"
+    ></app-offer-details-info>
+    <app-offer-details-info
+      class="info"
+      [iconstring]="'schedule'"
+      [name]="offer.published_at"
+      [text]="'Added'"
+    ></app-offer-details-info>
+  </div>
+
+  <app-offer-details-skills [skills]="offer.skills"></app-offer-details-skills>
+
+  <div class="offer" [innerHTML]="offer.body"></div>
+  <div class="apply">
+    <app-offer-details-apply></app-offer-details-apply>
+  </div>
+</div>

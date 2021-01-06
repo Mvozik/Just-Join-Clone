@@ -1,12 +1,12 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
+import * as mongoose from 'mongoose';
 import { EmploymentTypeModel } from './employment_type.model';
 import { SkillModel } from './skill.model';
 
 @Schema()
 export class JobOffer extends Document {
-  @Prop()
-  _id: string;
+  _id: mongoose.Types.ObjectId;
   @Prop()
   body: string;
   @Prop()

@@ -1,5 +1,4 @@
 <mat-spinner *ngIf="!offers" class="spinner"></mat-spinner>
-<button mat-button (click)="console()">XD</button>
 <div class="offer-list">
   <app-offer
     *ngFor="let offer of offers"
@@ -7,6 +6,6 @@
     [category]="offer.marker_icon"
     [name]="offer.title"
     [employment]="offer.employment_types[0]"
-    [routerLink]=""
+    [routerLink]="['details', offer._id]"
   ></app-offer>
 </div>
