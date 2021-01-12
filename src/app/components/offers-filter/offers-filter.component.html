@@ -1,0 +1,15 @@
+<div class="container">
+  <app-filter class="filter" (searchTerm)="handleSearch($event)"></app-filter>
+  <div class="location">
+    <button mat-button>
+      Location <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+  </div>
+
+  <app-filter-icon
+    *ngFor="let iconModel of iconModels"
+    class="filter-icon"
+    [url]="iconModel.url"
+    [name]="iconModel.name"
+  ></app-filter-icon>
+</div>

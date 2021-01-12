@@ -26,7 +26,8 @@ import { NgxMatFileInputModule } from '@angular-material-components/file-input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { OfferDetailsSkillsComponent } from './components/offer-details-skills/offer-details-skills.component';
 import { SkillComponent } from './components/skill/skill.component';
-
+import { FilterComponent } from './components/filter/filter.component';
+import { FilterIconComponent } from './components/filter-icon/filter-icon.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +42,8 @@ import { SkillComponent } from './components/skill/skill.component';
     OfferDetailsApplyComponent,
     OfferDetailsSkillsComponent,
     SkillComponent,
+    FilterComponent,
+    FilterIconComponent,
   ],
   imports: [
     BrowserModule,

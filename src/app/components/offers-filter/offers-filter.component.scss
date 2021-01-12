@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  height: 80px;
+  background-color: white;
+}
+.filter {
+  margin: 20px 0 0 0;
+}
+.location {
+  margin: auto 0 auto 30px;
+  height: fit-content;
+  background-color: white;
+  border: solid 1px #b1b1b1;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.filter-icon {
+  margin: auto 5px auto 5px;
+}
