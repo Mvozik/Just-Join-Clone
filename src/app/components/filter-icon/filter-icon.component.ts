@@ -1,4 +1,13 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  HostListener,
+  Input,
+  OnInit,
+  Output,
+  ViewChild,
+} from '@angular/core';
+import { ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-filter-icon',
@@ -8,7 +17,14 @@ import { Component, Input, OnInit } from '@angular/core';
 export class FilterIconComponent implements OnInit {
   @Input() url: string;
   @Input() name: string;
+  @Input() viewBox: string;
+  @Output() iconChange: EventEmitter<string> = new EventEmitter<string>();
+
   constructor() {}
+
+  @HostListener('click') onClick() {
+    this.iconChange.emit(this.name);
+  }
   color() {
     return {
       all: this.name == 'All',

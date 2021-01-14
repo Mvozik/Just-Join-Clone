@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { OfferService } from 'src/app/services/offer.service';
 import { JobOfferModel } from '../../models/job-offer.model';
+import { Observable } from 'rxjs';
+import { Store } from '@ngrx/store';
+import { AppState } from 'src/app/app.state';
 
 @Component({
   selector: 'app-offers-list',
@@ -9,15 +11,13 @@ import { JobOfferModel } from '../../models/job-offer.model';
   styleUrls: ['./offers-list.component.scss'],
 })
 export class OffersListComponent implements OnInit {
-  constructor(private offerService: OfferService) {}
+  constructor(private store: Store<AppState>) {}
 
-  offers: JobOfferModel[];
+  offers: Observable<JobOfferModel[]>;
   ngOnInit(): void {
-    this.offerService
-      .getOffers()
-      .subscribe((response) => (this.offers = response));
+    this.offers = this.store.select('offer');
   }
-  console() {
+  log() {
     console.log(this.offers);
   }
 }

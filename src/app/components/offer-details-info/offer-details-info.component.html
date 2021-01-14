@@ -3,12 +3,14 @@
     <mat-icon class="icon" [ngClass]="iconColor()">{{ iconstring }}</mat-icon>
   </div>
   <div class="texts">
-    <h4>
-      <div *ngIf="companyUrl != undefined">
-        <a class="link" href="{{ companyUrl }}" target="_blank">{{ name }}</a>
+    <div>
+      <div class="name-box" *ngIf="companyUrl != undefined">
+        <a class="link" href="{{ companyUrl }}" target="_blank">
+          <p class="company-name">{{ name }}</p>
+        </a>
       </div>
       <a *ngIf="companyUrl == undefined">{{ name }}</a>
-    </h4>
+    </div>
     <h5>{{ text }}</h5>
   </div>
 </div>

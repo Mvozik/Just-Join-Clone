@@ -1,11 +1,10 @@
 <mat-spinner *ngIf="!offers" class="spinner"></mat-spinner>
 <div class="offer-list">
   <app-offer
-    *ngFor="let offer of offers"
+    *ngFor="let offer of offers | async"
     class="offer"
-    [category]="offer.marker_icon"
-    [name]="offer.title"
-    [employment]="offer.employment_types[0]"
+    [offer]="offer"
     [routerLink]="['details', offer._id]"
   ></app-offer>
 </div>
+<button mat-button (click)="log()">LOG</button>

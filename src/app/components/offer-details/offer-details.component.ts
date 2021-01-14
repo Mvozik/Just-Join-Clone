@@ -21,9 +21,7 @@ export class OfferDetailsComponent implements OnInit {
       .getOffer(id)
       .subscribe((response) => (this.offer = response));
   }
-  click() {
-    console.log(this.offer);
-  }
+
   color() {
     return {
       php: this.offer.marker_icon == 'php',

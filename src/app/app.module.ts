@@ -28,6 +28,8 @@ import { OfferDetailsSkillsComponent } from './components/offer-details-skills/o
 import { SkillComponent } from './components/skill/skill.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { FilterIconComponent } from './components/filter-icon/filter-icon.component';
+import { StoreModule } from '@ngrx/store';
+import { reducer } from './reducers/offer.reducer';
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,6 +62,9 @@ import { FilterIconComponent } from './components/filter-icon/filter-icon.compon
     MatInputModule,
     NgxMatFileInputModule,
     MatCheckboxModule,
+    StoreModule.forRoot({
+      offer: reducer,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

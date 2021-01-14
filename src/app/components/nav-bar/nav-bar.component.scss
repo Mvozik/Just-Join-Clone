@@ -9,8 +9,6 @@
   margin-left: 20px;
 }
 .navbar {
-  position: sticky;
-  top: 0;
   display: flex;
   height: 68px;
   border-bottom: 1px solid #c3c3c3ab;
@@ -27,7 +25,9 @@ button {
 }
 .logo-text {
   margin: auto auto auto 20px;
-
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   color: #99a1ab;
   font-size: 0.875rem;
 }
@@ -77,8 +77,25 @@ button:hover {
   background-color: #a02850;
 }
 
-.option {
-}
 .menu {
   margin: auto 15px auto 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  button {
+    display: none;
+  }
+  .menu {
+    margin: auto 15px auto auto;
+    display: block;
+  }
+  .logo-text {
+    display: none;
+  }
+  .job-button {
+    display: none;
+  }
+  .sign-in-button {
+    display: none;
+  }
 }

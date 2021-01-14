@@ -4,16 +4,32 @@
   background-color: white;
 }
 .filter {
-  margin: 20px 0 0 0;
+  margin: auto 0 auto 15px;
 }
-.location {
-  margin: auto 0 auto 30px;
-  height: fit-content;
+
+.filter-icon {
+  margin: auto 0px auto 0px;
+}
+.location-container {
+  width: 110px;
+  margin: auto 5px auto 10px;
+  height: 35px;
   background-color: white;
   border: solid 1px #b1b1b1;
   border-radius: 30px;
-  overflow: hidden;
 }
-.filter-icon {
-  margin: auto 5px auto 5px;
+.filter-icon-container {
+  display: flex;
+  overflow: scroll;
+}
+.filter-icon-container::-webkit-scrollbar {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .filter {
+    display: none;
+  }
+  .location-container {
+    display: none;
+  }
 }

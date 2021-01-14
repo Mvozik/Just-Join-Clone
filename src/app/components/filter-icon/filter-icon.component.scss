@@ -2,7 +2,8 @@ svg {
   fill: rgb(255, 255, 255);
   display: block;
   margin: auto;
-  width: 22px;
+  width: 18px;
+  height: 18px;
 }
 path {
   width: 50px;
@@ -22,5 +23,11 @@ button {
   }
 }
 .all {
-  background: linear-gradient(#ff5de9, #8031ff);
+  background: linear-gradient(#aa01d4, #7d009c);
+}
+.all-text {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  color: #ffffff;
 }

@@ -22,8 +22,8 @@
 .image {
   display: flex;
   height: 250px;
-  background: url("../../../assets/images/header-background.png") center center /
-    cover no-repeat;
+  background: url("/assets/images/header-background.png") center center / cover
+    no-repeat;
 }
 .apply {
   background-color: rgb(255, 255, 255);
@@ -134,4 +134,9 @@
   background-color: #00000031;
   position: absolute;
   margin: 5px 0 0 35px;
+}
+@media only screen and (max-width: 600px) {
+  .offer-title {
+    font-size: 3px;
+  }
 }

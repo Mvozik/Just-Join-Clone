@@ -1,11 +1,11 @@
 .container {
-  margin: 0;
   padding: 0;
+  margin: 10px auto 0 auto;
   height: 77px;
   display: flex;
   border-radius: 10px;
   overflow: hidden;
-  margin-top: 10px;
+  width: 95%;
 }
 
 .info {
@@ -14,16 +14,58 @@
     padding: 0;
     margin: 0;
   }
-  .name {
-    font-weight: 600;
+  .location {
+    font-size: 12px;
+    font-weight: 300;
+    color: #acacac;
 
-    color: #818181;
-    margin-bottom: 20px;
+    .name {
+      font-weight: 500;
+      color: #727272;
+    }
+    .gps-icon {
+      margin: 0 0 0 15px;
+    }
+    .icon {
+      font-size: 19px;
+    }
+  }
+}
+
+.state {
+  margin: auto 35px auto 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  p {
+    margin: auto 0 auto 0;
   }
   .salary {
+    margin: auto 15px auto 0;
+    font-size: 16px;
     color: #1ec66c;
   }
 }
-.state {
-  margin: auto 15px 10px 0;
+img {
+  margin: auto;
+  max-height: 40px;
+  max-width: 85px;
+}
+.img-box {
+  display: flex;
+  width: 125px;
+}
+.time {
+  font-family: "Open Sans", sans-serif;
+  width: fit-content;
+  height: fit-content;
+  padding: 0 5px 0 5px;
+  text-align: center;
+  border-radius: 11px;
+  color: rgb(55, 71, 79);
+  border: 1px solid rgb(224, 224, 224);
+  background-color: rgb(255, 255, 255);
+}
+.salary-container {
+  height: 100%;
 }

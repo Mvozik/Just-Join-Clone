@@ -17,6 +17,8 @@ h5 {
   position: relative;
   top: -15px;
   text-align: center;
+  white-space: nowrap;
+  overflow: ellipsis;
 }
 .icon-box {
   display: flex;
@@ -49,4 +51,11 @@ h5 {
 }
 a {
   text-decoration: none;
+}
+.company-name {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
 }

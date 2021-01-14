@@ -18,136 +18,138 @@ div:focus {
 .margined {
   margin: 5px;
 }
-
+.flex {
+  display: flex;
+}
 .php {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #3290fb;
+  background: linear-gradient(0.75turn, rgb(65, 173, 250), rgb(21, 124, 252));
 }
 .ruby {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #ff2222;
+  background: linear-gradient(0.75turn, rgb(239, 83, 80), rgb(244, 67, 54));
 }
 .javascript {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #fff126;
+  background: linear-gradient(0.75turn, rgb(255, 199, 6), rgb(255, 175, 0));
 }
 .net {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #9600d1;
+  background: linear-gradient(0.75turn, #c86bec, #9600d1);
 }
 .java {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #f64b4b;
+  background: linear-gradient(0.75turn, #f64b4b, #f64b4b);
 }
 .python {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #003879;
+  background: linear-gradient(0.75turn, rgb(31, 94, 182), rgb(31, 123, 196));
 }
 .mobile {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #c038cc;
+  background: linear-gradient(0.75turn, #df77e9, #c038cc);
 }
 .scala {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #a50000;
+  background: linear-gradient(0.75turn, #eb3131, #a50000);
 }
 .c {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #24c292;
+  background: linear-gradient(0.75turn, #65f8cc, #24c292);
 }
 .testing {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #005c2e;
+  background: linear-gradient(0.75turn, #00994d, #005c2e);
 }
 .devops {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #0502b3;
+  background: linear-gradient(0.75turn, #517efa, #0137ca);
 }
 .uxui {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #eeae00;
+  background: linear-gradient(0.75turn, #e7c053, #eeae00);
 }
 .pm {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #02ecb2;
+  background: linear-gradient(0.75turn, #52ecc6, #02ecb2);
 }
 .game {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #c3048a;
+  background: linear-gradient(0.75turn, #c0449b, #c3048a);
 }
 .analytics {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #130069;
+  background: linear-gradient(0.75turn, #7456fa, #130069);
 }
 .security {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #1f00aa;
+  background: linear-gradient(0.75turn, #6c4dfa, #1f00aa);
 }
 .data {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #6aec00;
+  background: linear-gradient(0.75turn, rgb(137, 219, 84), rgb(101, 175, 53));
 }
 .go {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #00f7ff;
+  background: linear-gradient(0.75turn, rgb(106, 215, 229), rgb(106, 139, 229));
 }
 .sap {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #0099ff;
+  background: linear-gradient(0.75turn, rgb(2, 175, 235), rgb(27, 104, 194));
 }
 .support {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #ae00ff;
+  background: linear-gradient(0.75turn, #d27ff8, #ae00ff);
 }
 .other {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #e100ff;
+  background: linear-gradient(0.75turn, #f099fc, #e100ff);
 }
 .html {
   display: block;
   height: 100%;
   width: 5px;
-  background-color: #e65e04;
+  background: linear-gradient(0.75turn, #fda66c, #e65e04);
 }
