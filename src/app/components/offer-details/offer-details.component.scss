@@ -22,12 +22,12 @@
 .image {
   display: flex;
   height: 250px;
-  background: url("/assets/images/header-background.png") center center / cover
-    no-repeat;
+  background: url("../../../assets/images/header-background.png") center center /
+    cover no-repeat;
 }
 .apply {
   background-color: rgb(255, 255, 255);
-  height: 400px;
+  height: fit-content;
   width: 95%;
   margin: 30px auto 15px auto;
   border-radius: 5px;
@@ -136,7 +136,32 @@
   margin: 5px 0 0 35px;
 }
 @media only screen and (max-width: 600px) {
+  .offer {
+    width: 83%;
+  }
   .offer-title {
     font-size: 3px;
+  }
+  .shadow-circle {
+    display: none;
+  }
+  .circle-white {
+    display: none;
+  }
+  .shadow-circle2 {
+    display: none;
+  }
+  .img {
+    display: none;
+  }
+  .flex-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .info {
+      margin: 20px 3px 0 3px;
+    }
+  }
+  .title-container {
+    margin: auto;
   }
 }

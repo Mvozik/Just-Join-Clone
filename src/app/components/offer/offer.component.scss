@@ -54,6 +54,7 @@ img {
 .img-box {
   display: flex;
   width: 125px;
+  margin-left: 5px;
 }
 .time {
   font-family: "Open Sans", sans-serif;
@@ -68,4 +69,24 @@ img {
 }
 .salary-container {
   height: 100%;
+}
+.xd {
+  width: 100%;
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .time {
+    display: none;
+  }
+  .location {
+    display: none;
+  }
+  .xd {
+    margin: 20px;
+    flex-direction: column;
+    .salary {
+      margin: 0;
+    }
+  }
 }

@@ -4,26 +4,28 @@
   <div class="img-box">
     <img [src]="offer.company_logo_url" />
   </div>
-  <div class="info">
-    <p class="name">{{ offer.title }}</p>
-    <div class="flex location">
-      <mat-icon class="icon">business</mat-icon>
-      <p>{{ offer.company_name }}</p>
-      <mat-icon class="gps-icon icon">room</mat-icon>
-      <p class="city">{{ offer.city }}</p>
+  <div class="xd">
+    <div class="info">
+      <p class="name">{{ offer.title }}</p>
+      <div class="flex location">
+        <mat-icon class="icon">business</mat-icon>
+        <p>{{ offer.company_name }}</p>
+        <mat-icon class="gps-icon icon">room</mat-icon>
+        <p class="city">{{ offer.city }}</p>
+      </div>
     </div>
-  </div>
-  <div class="state">
-    <div class="flex salary-container">
-      <p class="salary" *ngIf="offer.employment_types[0].salary">
-        {{ offer.employment_types[0].salary.from }} -
-        {{ offer.employment_types[0].salary.to }}
-        {{ offer.employment_types[0].salary.currency }}
-      </p>
-      <p class="salary" *ngIf="!offer.employment_types[0].salary">
-        Undisclosed Salary
-      </p>
-      <p class="time">{{ time }}</p>
+    <div class="state">
+      <div class="flex salary-container">
+        <p class="salary" *ngIf="offer.employment_types[0].salary">
+          {{ offer.employment_types[0].salary.from }} -
+          {{ offer.employment_types[0].salary.to }}
+          {{ offer.employment_types[0].salary.currency }}
+        </p>
+        <p class="salary" *ngIf="!offer.employment_types[0].salary">
+          Undisclosed Salary
+        </p>
+        <p class="time">{{ time }}</p>
+      </div>
     </div>
   </div>
 </mat-card>
