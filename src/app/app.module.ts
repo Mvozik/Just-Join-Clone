@@ -30,6 +30,10 @@ import { FilterComponent } from './components/filter/filter.component';
 import { FilterIconComponent } from './components/filter-icon/filter-icon.component';
 import { StoreModule } from '@ngrx/store';
 import { reducer } from './reducers/offer.reducer';
+import { BrandsPageComponent } from './components/brands-page/brands-page.component';
+import { GeekPageComponent } from './components/geek-page/geek-page.component';
+import { MatchmakingPageComponent } from './components/matchmaking-page/matchmaking-page.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +50,9 @@ import { reducer } from './reducers/offer.reducer';
     SkillComponent,
     FilterComponent,
     FilterIconComponent,
+    BrandsPageComponent,
+    GeekPageComponent,
+    MatchmakingPageComponent,
   ],
   imports: [
     BrowserModule,

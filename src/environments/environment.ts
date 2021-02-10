@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://localhost:3000',
+  baseUrl: 'https://just-join-it-clone.herokuapp.com',
+  // baseUrl: 'http://localhost:3000',
 };
 
 /*

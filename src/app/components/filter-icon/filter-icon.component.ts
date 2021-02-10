@@ -20,6 +20,8 @@ export class FilterIconComponent implements OnInit {
   @Input() viewBox: string;
   @Output() iconChange: EventEmitter<string> = new EventEmitter<string>();
 
+  @Input() index: any;
+
   constructor() {}
 
   @HostListener('click') onClick() {

@@ -1,14 +1,35 @@
 <div class="container">
   <app-filter class="filter" (searchTerm)="filterByName($event)"></app-filter>
-  <div class="location-container">
-    <button mat-button class="location">
-      Location <mat-icon>keyboard_arrow_down</mat-icon>
-    </button>
-  </div>
+
+  <button mat-button class="location">
+    Location <mat-icon>keyboard_arrow_down</mat-icon>
+  </button>
 
   <div class="filter-icon-container">
+    <div *ngFor="let iconModel of iconModels; let i = index">
+      <app-filter-icon
+        *ngIf="screen(i)"
+        routerLink="/"
+        class="filter-icon"
+        [url]="iconModel.url"
+        [name]="iconModel.name"
+        [viewBox]="iconModel.viewBox"
+        (iconChange)="filterByIcon($event)"
+      ></app-filter-icon>
+    </div>
+
+    <button *ngIf="displayMenu" class="menu" [matMenuTriggerFor]="menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+  </div>
+</div>
+<mat-menu #menu="matMenu">
+  <div *ngFor="let iconModel of iconModels; let i = index">
     <app-filter-icon
-      *ngFor="let iconModel of iconModels"
+      *ngIf="!screen(i)"
+      routerLink="/"
       class="filter-icon"
       [url]="iconModel.url"
       [name]="iconModel.name"
@@ -16,4 +37,4 @@
       (iconChange)="filterByIcon($event)"
     ></app-filter-icon>
   </div>
-</div>
+</mat-menu>

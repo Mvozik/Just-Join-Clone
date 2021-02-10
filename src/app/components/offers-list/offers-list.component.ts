@@ -17,7 +17,4 @@ export class OffersListComponent implements OnInit {
   ngOnInit(): void {
     this.offers = this.store.select('offer');
   }
-  log() {
-    console.log(this.offers);
-  }
 }

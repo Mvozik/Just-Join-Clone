@@ -67,9 +67,12 @@ button:hover {
   background-color: #ff4081;
   margin: auto 15px auto 15px;
   p {
-    color: white;
+    color: #ffffff;
     margin: auto;
-    padding: 6px 16px;
+  }
+  mat-icon {
+    color: #ffffff;
+    margin: auto 0 auto 0;
   }
 }
 .sign-in-button:hover {

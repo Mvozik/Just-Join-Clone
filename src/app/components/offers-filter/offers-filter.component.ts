@@ -1,11 +1,16 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  HostListener,
+  OnInit,
+  Output,
+} from '@angular/core';
 import { IconModel } from '../../models/icon.model';
 import * as OfferActions from '../../actions/offer.actions';
 import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/app.state';
 import { OfferService } from 'src/app/services/offer.service';
 import { FilterModel } from 'src/app/models/filter.model';
-import { JobOfferModel } from 'src/app/models/job-offer.model';
 
 @Component({
   selector: 'app-offers-filter',
@@ -15,28 +20,44 @@ import { JobOfferModel } from 'src/app/models/job-offer.model';
 export class OffersFilterComponent implements OnInit {
   @Output() searchTerm: EventEmitter<string> = new EventEmitter<string>();
 
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.size = window.innerWidth;
+    if (
+      window.innerWidth < 395 + this.iconModels.length * 50 &&
+      window.innerWidth > 600
+    ) {
+      this.displayMenu = true;
+    } else {
+      this.displayMenu = false;
+    }
+  }
+
+  size: number;
+  displayMenu: boolean;
   constructor(
     private offerService: OfferService,
     private store: Store<AppState>
   ) {}
 
   ngOnInit(): void {
+    this.onResize();
     this.filterRequest();
   }
 
   icon: string = '';
   filterName: string = '';
-  filterByIcon(event: string) {
+  filterByIcon(event: string): void {
     let filtered = this.iconModels.find((x) => x.name == event);
     this.icon = filtered.searchTerm;
     this.filterRequest();
   }
-  filterByName(event: string) {
+  filterByName(event: string): void {
     this.filterName = event;
     this.filterRequest();
   }
 
-  filterRequest() {
+  filterRequest(): void {
     let model: FilterModel = {
       name: this.filterName,
       icon: this.icon,
@@ -44,6 +65,17 @@ export class OffersFilterComponent implements OnInit {
     this.offerService.getFilteredOffers(model).subscribe((response) => {
       this.store.dispatch(new OfferActions.SetOffers(response));
     });
+  }
+
+  screen(i): boolean {
+    if (this.size - 45 > 400 + i * 50) {
+      return true;
+    }
+    if (this.size < 600) {
+      return true;
+    } else {
+      return false;
+    }
   }
   iconModels: IconModel[] = [
     {

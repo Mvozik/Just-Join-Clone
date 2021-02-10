@@ -1,7 +1,20 @@
 <mat-sidenav-container fullscreen>
   <app-nav-bar (toggleEmit)="chandleToggle()"></app-nav-bar>
-  <mat-sidenav class="sidenav" #sidenav [mode]="'over'" [position]="'end'"
-    >SIEEEMAAAANKO</mat-sidenav
-  >
+  <mat-sidenav class="sidenav" #sidenav [mode]="'over'" [position]="'end'">
+    <img class="logo" src="assets/images/logo-jjit.png" />
+    <button mat-button><mat-icon>home</mat-icon> Employer Panel</button>
+    <button mat-button><mat-icon>home</mat-icon> JustJoinIt</button>
+    <button mat-button><mat-icon>home</mat-icon> About Us</button>
+    <button mat-button><mat-icon>home</mat-icon> Report</button>
+    <button mat-button>
+      <mat-icon>home</mat-icon> Śniadanie z Programowaniem
+    </button>
+    <button mat-button><mat-icon>home</mat-icon> Event</button>
+    <button mat-button><mat-icon>home</mat-icon> For Juniors</button>
+    <button mat-button><mat-icon>home</mat-icon> It Index</button>
+    <button mat-button><mat-icon>home</mat-icon> RSS</button>
+    <button mat-button><mat-icon>home</mat-icon> Terms</button>
+    <button mat-button><mat-icon>home</mat-icon> Policy</button>
+  </mat-sidenav>
   <router-outlet></router-outlet>
 </mat-sidenav-container>

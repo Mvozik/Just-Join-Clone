@@ -3,4 +3,17 @@
 }
 .sidenav {
   width: 300px;
+  font-family: "Open Sans", sans-serif;
+  color: #37474f;
+  button {
+    display: block;
+    height: 55px;
+    width: 100%;
+    text-align: left;
+    padding: 0 0 0 30px;
+  }
+}
+.logo {
+  width: 150px;
+  margin: 30px 75px 30px 75px;
 }
